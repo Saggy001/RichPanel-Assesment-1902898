@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/white_round_20"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Plan Details"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20sp"
+            android:id="@+id/tag1"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tag1"
+            android:layout_alignBottom="@id/tag1"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/tag1"
+            android:background="@drawable/active_round"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Active"
+            android:textColor="#024B6C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tag1"
+            android:text="cancel"
+            android:id="@+id/cancel"
+            android:layout_alignBottom="@id/tag1"
+            android:gravity="center_vertical"
+            android:textColor="@color/blue"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tag1"
+            android:text="Basic"
+            android:id="@+id/planName"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/planName"
+            android:text="Phone+Tablet"
+            android:id="@+id/planDes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Rs"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:id="@+id/planPrice"
+            android:textColor="@color/black"
+            android:layout_below="@id/planDes"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/planCycle"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/planPrice"
+            android:layout_toEndOf="@id/planPrice"
+            android:text="/yr"
+            android:textSize="28sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/planPrice"
+            android:text="Change Plan"
+            android:id="@+id/changePlan"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/chnage_button"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/blue"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changePlan"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:letterSpacing="0.01"
+            android:background="@drawable/grey_round"
+            android:text="Your subscription has started on Jul 11, 2022 and will auto renew on Jul 12th, 2023."
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:id="@+id/desc"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

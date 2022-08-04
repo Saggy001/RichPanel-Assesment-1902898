@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142467661949",
+    "project_id": "richpanel-assesment",
+    "storage_bucket": "richpanel-assesment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142467661949:android:07756672d5cb5ed534f114",
+        "android_client_info": {
+          "package_name": "com.saggy.richpanelassesment1902898"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142467661949-r97cici5huanbco4m52f4lmnanfmlu2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCc_pxj3_rqlHdznBXu9en5v-3rzr1O7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142467661949-r97cici5huanbco4m52f4lmnanfmlu2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

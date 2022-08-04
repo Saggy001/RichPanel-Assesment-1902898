@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">RichPanel Assesment 1902898</string>
+    <string name="Rs">\u20B9</string>
+    <string name="phone">Phone</string>
+    <string name="tablet">Tablet</string>
+    <string name="computer">Computer</string>
+    <string name="good">Good</string>
+    <string name="tv">TV</string>
+    <string name="better">Better</string>
+    <string name="best">Best</string>
+    <string name="p4">480p</string>
+    <string name="p10">1080p</string>
+    <string name="pk">4K+HDR</string>
+    <string name="mobile">Mobile</string>
+    <string name="basic">Basic</string>
+    <string name="premium">Premium</string>
+    <string name="standard">Standard</string>
+    <string name="devices">Devices you can use to watch</string>
+    <string name="resolution">Resolution</string>
+    <string name="videoQuality">Video quality</string>
+    <string name="monthlyPrice">Monthly Price</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="yearlyPrice">Yearly Price</string>
+    <string name="choosePlan">Choose the right plan for you</string>
+
+</resources>

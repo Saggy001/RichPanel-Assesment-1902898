@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration_Activity"
+    android:background="@color/blue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/cardround"
+        android:padding="30dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:id="@+id/tag1"
+            style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/darkGrey"
+            android:layout_below="@+id/tag1"
+            android:id="@+id/tag2"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/nameEdit"
+            android:paddingStart="10dp"
+            android:textColor="@color/darkGrey"
+            android:layout_marginTop="3dp"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:background="@drawable/editround"
+            android:gravity="center_vertical"
+            android:layout_below="@id/tag2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/darkGrey"
+            android:layout_below="@+id/nameEdit"
+            android:id="@+id/tag3"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/emailEdit"
+            android:paddingStart="10dp"
+            android:layout_marginTop="3dp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/darkGrey"
+            android:background="@drawable/editround"
+            android:gravity="center_vertical"
+            android:layout_below="@id/tag3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_below="@+id/emailEdit"
+            android:id="@+id/tag4"
+            android:textColor="@color/darkGrey"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/passEdit"
+            android:textColor="@color/darkGrey"
+            android:layout_marginTop="3dp"
+            android:paddingStart="10dp"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:background="@drawable/editround"
+            android:gravity="center_vertical"
+            android:layout_below="@id/tag4"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passEdit"
+            android:layout_marginTop="10dp"
+            android:text="Remember Me"
+            android:id="@+id/checkbox"
+            android:textColor="@color/darkGrey"
+            android:textColorHighlight="@color/blue"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/signup"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/checkbox"
+            android:background="@drawable/buttonround"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signup"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? "
+                android:id="@+id/tag5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/login"
+                android:layout_alignTop="@id/tag5"
+                android:layout_toEndOf="@id/tag5"
+                android:textColor="@color/blue"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
